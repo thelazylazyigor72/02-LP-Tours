@@ -47,9 +47,9 @@ function App() {
   //define useEffect, here we makin fetching effect w/ our function
   //also we need it to work just once, when mounting, so we passing 2nd parameter - empty array
   //so when mountin we fetch and other renders will be passed by cuz we not makin any changes in array that we passed
-  /*useEffect(() => {
+  useEffect(() => {
     fetchTours()
-  },[])*/
+  },[])
   
   //start w/ checkin' a state, when its true
   //we will render loadin idicator on page via Loading component
