@@ -43,7 +43,7 @@ module.exports = {
     //указываем мод
     mode: 'development',
     //указываем точку входа, может быть не одна
-    entry: './index.js',
+    entry: './index.jsx',
     //указываем в какую папку все должно итоговое идти и как называться итоговый жс файл
     output: {
         filename: 'bundle.js',
