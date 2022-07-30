@@ -147,6 +147,10 @@ main {
 	margin-right: auto;
 }
 .single-tour {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background: $clr-white;
 	border-radius: $radius;
 	margin: 2rem 0;
@@ -162,45 +166,46 @@ main {
 		border-top-right-radius: $radius;
 		border-top-left-radius: $radius;
 	}
-	button {
-		background: transparent;
-		border-color: transparent;
-		text-transform: capitalize;
-		color: $clr-primary-5;
-		font-size: 1rem;
-		cursor: pointer;
-		padding-left: 0.25rem;
-	}
 	footer {
 		padding: 1.5rem 2rem;
-	}
-	.delete-btn {
-		display: block;
-		width: 200px;
-		margin: 1rem auto 0 auto;
-		color: $clr-red-dark;
-		letter-spacing: $spacing;
-		background: transparent;
-		border: 1px solid $clr-red-dark;
-		padding: 0.25rem 0.5rem;
-		border-radius: $radius;
+		button {
+			background: transparent;
+			border-color: transparent;
+			text-transform: capitalize;
+			color: $clr-primary-5;
+			font-size: 1rem;
+			cursor: pointer;
+			padding-left: 0.25rem;
+		}
+		.delete-btn {
+			display: block;
+			width: 200px;
+			margin: 1rem auto 0 auto;
+			color: $clr-red-dark;
+			letter-spacing: $spacing;
+			background: transparent;
+			border: 1px solid $clr-red-dark;
+			padding: 0.25rem 0.5rem;
+			border-radius: $radius;
+		}
+		.tour-info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 1.5rem;
+			h4 {
+				margin-bottom: 0;
+			}
+		}
+		.tour-price {
+			color: $clr-primary-5;
+			background: $clr-primary-10;
+			padding: 0.25rem 0.5rem;
+			border-radius: $radius;
+		}
 	}
 }
-.tour-info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 1.5rem;
-	h4 {
-		margin-bottom: 0;
-	}
-}
-.tour-price {
-	color: $clr-primary-5;
-	background: $clr-primary-10;
-	padding: 0.25rem 0.5rem;
-	border-radius: $radius;
-}
+
 @include md {
 	h1 {
 		font-size: 4rem;
